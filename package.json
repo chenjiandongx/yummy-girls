@@ -1,8 +1,9 @@
 {
   "name": "Yummy Girls",
   "version": "1.0.0",
-  "description": "这是一辆开往幼儿园的拖拉机",
+  "description": "无他，唯手熟尔",
   "author": "chenjiandongx <chenjiandongx@qq.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
