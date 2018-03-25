@@ -1,7 +1,7 @@
 <template>
     <div class="container"
          v-infinite-scroll="loadMore"
-         infinite-scroll-distance="600"
+         infinite-scroll-distance="800"
          infinite-scroll-throttle-delay="100"
          infinite-scroll-disabled="busy"
          :items="items">
