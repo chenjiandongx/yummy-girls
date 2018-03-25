@@ -1,7 +1,7 @@
 {
-  "name": "yummy",
+  "name": "Yummy Girls",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "这是一辆开往幼儿园的拖拉机",
   "author": "chenjiandongx <chenjiandongx@qq.com>",
   "private": true,
   "scripts": {
