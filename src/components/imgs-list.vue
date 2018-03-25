@@ -30,7 +30,7 @@
             loadMore() {
                 try {
                     for (let i = 0; i < 6; i++) {
-                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * 1000) + 1])
+                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * 2000) + 1])
                     }
                 } catch (e) {
                 }
