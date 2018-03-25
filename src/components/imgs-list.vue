@@ -88,7 +88,5 @@
 
     .img-cell img {
         width: 100%;
-        padding-bottom: 1em;
-        margin-bottom: 0.5em;
     }
 </style>
