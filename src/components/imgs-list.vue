@@ -73,8 +73,7 @@
     }
 
     .img-cell {
-        padding: 1em;
-        margin: 0 0.125em 1em;
+        padding: 0.75em;
         -webkit-column-break-inside: avoid;
         break-inside: avoid;
         background: white;
