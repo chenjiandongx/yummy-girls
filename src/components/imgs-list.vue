@@ -7,7 +7,7 @@
          :items="items">
         <div class="waterfall">
             <div class="img-cell" v-for="item in items">
-                <img :src="item.imgSrc"/>
+                <img :src="urlPrefix + item.imgSrc"/>
             </div>
         </div>
     </div>
@@ -20,7 +20,8 @@
         name: 'App',
         data () {
             return {
-                items: []
+                items: [],
+                urlPrefix: "https://raw.githubusercontent.com/chenjiandongx/mmjpg/master/yummy/"
             }
         },
         created() {
@@ -30,7 +31,7 @@
             loadMore() {
                 try {
                     for (let i = 0; i < 6; i++) {
-                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * 2000) + 1])
+                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * 3000) + 1])
                     }
                 } catch (e) {
                 }
