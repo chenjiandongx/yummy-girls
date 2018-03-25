@@ -1,7 +1,8 @@
 <template>
     <div class="container"
          v-infinite-scroll="loadMore"
-         infinite-scroll-throttle-delay="200"
+         infinite-scroll-distance="600"
+         infinite-scroll-throttle-delay="100"
          infinite-scroll-disabled="busy"
          :items="items">
         <div class="waterfall">
@@ -48,7 +49,7 @@
 
 <style>
     body {
-        padding: 0;
+        padding: 12px 0 0 0;
         margin: 0;
         height: 100%;
         width: 100%;
@@ -56,7 +57,7 @@
     }
 
     .container {
-        width: 90%;
+        width: 96%;
         margin: 0 auto;
     }
 
@@ -77,6 +78,7 @@
         -webkit-column-break-inside: avoid;
         break-inside: avoid;
         background: white;
+        border-bottom: 2px solid #eee;
         transition: all .3s;
     }
 
