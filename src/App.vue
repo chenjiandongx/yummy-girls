@@ -1,17 +1,16 @@
 <template>
-  <div id="app">
-    <imgs-list></imgs-list>
-  </div>
+    <div id="app">
+        <imgs-list></imgs-list>
+    </div>
 </template>
 
 <script>
-import imgsList from './components/imgs-list';
+    import imgsList from './components/imgs-list';
 
-export default {
-  name: 'App',
-  components: {
-    imgsList
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            imgsList
+        }
+    }
 </script>
-
