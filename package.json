@@ -12,8 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.2",
-    "vue-infinite-scroll": "^2.0.2",
-    "vue-spinner": "^1.0.3"
+    "vue-infinite-scroll": "^2.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

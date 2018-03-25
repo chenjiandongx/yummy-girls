@@ -6,22 +6,12 @@
 
 <script>
 import imgsList from './components/imgs-list';
-import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 
 export default {
   name: 'App',
   components: {
-    imgsList,
-      PulseLoader
+    imgsList
   }
 }
 </script>
 
-<style>
-  .container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-
-</style>
