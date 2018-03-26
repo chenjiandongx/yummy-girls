@@ -1,7 +1,7 @@
 <template>
     <div class="container"
          v-infinite-scroll="loadMore"
-         infinite-scroll-distance="800"
+         infinite-scroll-distance="720"
          infinite-scroll-throttle-delay="100"
          infinite-scroll-disabled="busy"
          :items="items">
@@ -21,7 +21,8 @@
         data () {
             return {
                 items: [],
-                urlPrefix: "https://raw.githubusercontent.com/chenjiandongx/mmjpg/master/yummy/"
+                urlPrefix: "https://raw.githubusercontent.com/chenjiandongx/mmjpg/master/yummy/",
+                count: 10000
             }
         },
         created() {
@@ -31,7 +32,7 @@
             loadMore() {
                 try {
                     for (let i = 0; i < 6; i++) {
-                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * 10000)])
+                        this.items.push(window.__INITIAL_STATE__[~~(Math.random() * this.count)]);
                     }
                 } catch (e) {
                 }
@@ -40,6 +41,7 @@
                 axios.get("https://raw.githubusercontent.com/chenjiandongx/mmjpg/master/yummy.json")
                     .then(response => {
                         window.__INITIAL_STATE__ = response.data;
+                        this.count = window.__INITIAL_STATE__.length;
                         this.loadMore();
                     }).catch(error => {
                 })
